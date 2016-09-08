@@ -1,0 +1,7 @@
+1.SELECT * FROM gs_bm_table WHERE id = 1 OR id = 3 OR id = 5;
+2.SELECT * FROM gs_bm_table WHERE id >= 4 AND id <= 8;
+3.SELECT * FROM gs_bm_table WHERE book_name LIKE 'PHP–{';
+4.SELECT * FROM gs_bm_table ORDER BY indate DESC;
+5.SELECT * FROM gs_bm_table WHERE DATE_FORMAT(indate, '%Y%m') = DATE_FORMAT(NOW(), '%Y%m');
+6.SELECT * FROM gs_bm_table ORDER BY indate DESC LIMIT 5;
+7.SELECT count(book_name LIKE '%PHP%' or NULL) FROM gs_bm_table;
